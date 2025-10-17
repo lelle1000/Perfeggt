@@ -1,0 +1,26 @@
+:root {
+
+    /* App Colors */
+    --white: #FFFFFF;
+    --black: #000000;
+    --backgroundColor: #FFFDF5;
+    --boxEnhanceAndHover: #FFEEBF;
+    --clickColor: #FFE96B;
+    --allFontColor: #333333;
+
+    /* Font Typography */
+    --massiveSize: 50px;
+    --bigSize: 30px;
+    --mediumSize: 20px;
+    --smallSize: 12px;
+    --BOLD: 500;
+
+    /* Spacing */
+    --XL: 100px;
+    --L: 45px;
+    --M: 30px;
+    --S: 20px;
+    --XS: 15px;
+
+}
+

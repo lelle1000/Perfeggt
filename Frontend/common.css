@@ -1,0 +1,35 @@
+@import './colorPalette.css';
+
+body {
+    
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face {
+    src: url(./Images-Fonts/Inter-VariableFont_opsz\,wght.ttf);
+    font-family: Standard;
+}
+
+.Active {
+    display: flex;
+}
+
+.Inactibe {
+    display: None;
+}
+
+#PhoneSize {
+    height: 852px;
+    width: 393px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+/* Navigation (Same for all pages) */
+
+
+/* Footer (Same for all pages) */
