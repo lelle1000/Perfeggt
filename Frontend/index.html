@@ -13,32 +13,129 @@
 <body>
 
     <main id="PhoneSize">
-        <nav class="NavContainer">
+        <nav id="NavContainer" class="NavAndFooterCommon">
 
+            <img id="PerfeggtLogo" src="./Images-Fonts/PerfeggtLogo.png" alt="Perfeggt Logo">
+        
 
         </nav>
             
-        <div id="InfoPageContainer" class="Active">
+        <div id="InfoPageContainer" class="Inactive">
+
+            <div class="Information">
+                <p class="InformationText">Welcome to Perfeggt! A quick and efficient egg boiling app for someone who has no time to waste!</p>
+            </div>
+
+            <div class="StepGuideContainer">
+                <div class="StepHeader">Step 1: Boil up your water</div>
+                <div class="InfoImageText">
+                    <p class="StepText">To achieve consistent results, bring the water to a boil before adding the eggs. This ensures they always start cooking under the same conditions.</p>
+                    <img class="StepImage" src="./Images-Fonts/100TempImage.png" alt="100 Degrees Celsius Boiling Water">
+                </div>
+            </div>
+
+            <div class="StepGuideContainer">
+                <div class="StepHeader">Step 2: Warm up your eggs</div>
+                <div class="InfoImageText">
+                    <p class="StepText">If the eggs have been refrigerated, they’re more likely to crack when placed directly into boiling water. To prevent this, run them under warm tap water first to let them warm up slightly before cooking.</p>
+                    <img class="StepImage" src="./Images-Fonts/EggWashImage.png" alt="Washing Egg">
+                </div>
+            </div>
+
+            <div class="StepGuideContainer">
+                <div class="StepHeader">Step 3: Use a spoon</div>
+                <div class="InfoImageText">
+                    <p class="StepText">Putting an egg directly into boiling water can cause it to crack, so place it on a spoon before carefully lowering it in.</p>
+                    <img class="StepImage" src="./Images-Fonts/EggSpoonImage.png" alt="Egg on spoon">
+                </div>
+            </div>
+
+            <div class="StepGuideContainer">
+                <div class="StepHeader">Step 4: Lower the tempature</div>
+                <div class="InfoImageText">
+                    <p class="StepText">Lastly, once all eggs have been gently lowered into the pot, start the timer, reduce the heat to a gentle simmer, and wait!</p>
+                    <img class="StepImage" src="./Images-Fonts/73TempImage.png" alt="73 Degrees Celsius Water">
+                </div>
+            </div>
+            
+           
+            
+
 
         </div>
 
-        <div id="DecisionPageContainer" class="Inactive">
+        <div id="DecisionPageContainer" class="Active">
+
+            <div class="Information">
+                <p class="InformationText">Please select the correct options below to set up the timer properly!</p>
+            </div>
+
+            <div class="ChoiceContainer">
+                <div class="ChoiceHeader">Pick the size of your eggs!</div>
+                <div id="EggSizeContainer">
+                    <div class="ImageBackground">Small 50g</div>
+                    <div class="ImageBackground">Medium 60g</div>
+                    <div class="ImageBackground">Large 70g</div>
+                    <div class="ImageBackground">X-Large 100g+</div>
+                </div>
+            </div>
+
+            <div class="ChoiceContainer">
+                <div class="ChoiceHeader">How do you want your eggs boiled!</div>
+                <div id="EggBoiledContainer">
+                    <div id="SoftBoiled" class="EggBox">
+                        <img class="EggClass" src="./Images-Fonts/SoftBoiled.png" alt="Soft-boiled egg">
+                        <p class="TextForEggClass">Soft</p>
+                    </div>
+                    <div id="MediumBoiled" class="EggBox">
+                        <img class="EggClass" src="./Images-Fonts/MediumBoiled.png" alt="Medium-boiled egg">
+                        <p class="TextForEggClass">Medium</p>
+                    </div>
+                    <div id="HardBoiled" class="EggBox">
+                        <img class="EggClass" src="./Images-Fonts/HardBoiled.png" alt="Hard-boiled egg">
+                        <p class="TextForEggClass">Hard</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ChoiceContainer">
+                <div class="ChoiceHeader">How many eggs are you boiling?</div>
+
+                <div id="EggInputBackground">
+                    <input id="HowManyEggsInput" type="text" placeholder="0">
+                </div>
+                <button id="SaveChoicesButton">Save</button>
+
+            </div>
 
         </div>
-        <div id="TimerPagePageContainer" class="Inactive">
-        
-        </div>
-        <footer class="FooterContainer">
+        <div id="TimerPageContainer" class="Inactive">
+            <div id="EggTimerContainer">
+                <div id="EggTimer"></div>
+                <button id="StartTimerButton">Start</button>
+            </div>
+
+            <div id="ProteinAndEggChoices">
+                <p id="CompleteChoicesText">You are soft-boiling 5 medium sized eggs which contains roughly 39 grams of protein.</p>
+                <button id="AudioButton" class="Active"><img src="./Images-Fonts/musical-note.png" alt="Button for timer signal"></button>
+            </div>
 
             
+
+        </div>
+
+        <footer id="FooterContainer" class="NavAndFooterCommon">
+            <img id="NoteIcon" class="FooterIcon" src="./Images-Fonts/notes.png" alt="Note Icon">
+
+            <img id="EggIcon" class="FooterIcon" src="./Images-Fonts/eggIcon.png" alt="Egg Icon">
+
+            <img id="TimerIcon" class="FooterIcon" src="./Images-Fonts/three-o-clock-clock.png" alt="Timer Icon">
         </footer>
     </main>
 
     
     
     
-
-    <script src="functions.js"></script>
     <script src="client.js"></script>
 </body>
 </html>

@@ -1,1 +1,81 @@
-@import './colorPalette.css'
+@import './colorPalette.css';
+
+#TimerPageContainer {
+     position: absolute;
+    top: 110px;
+    bottom: 110px;
+
+    flex-direction: column;
+
+    gap: 40px;
+
+    height: 672px;
+    width: 393px;
+
+    align-items: center;
+    
+
+}
+
+#EggTimerContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#EggTimer {
+    height: 445px;
+    width: 355px;
+    background-image: url(./Images-Fonts/EggBasic.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#StartTimerButton {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: var(--bigSize);
+}
+
+#StartTimerButton:hover {
+    background-color: var(--boxEnhanceAndHover);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#ProteinAndEggChoices {
+    background-color: var(--boxEnhanceAndHover);
+    text-align: left;
+    padding: 20px;
+
+    display: flex;
+    gap: 10px;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+#AudioButton {
+    height: 50px;
+    width: 50px;
+    object-position: center;
+    object-fit: cover;
+
+    padding: 10px;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+#CompleteChoicesText {
+    font-size: var(--smallMediumSize);
+    margin: 0;
+}
+
+#AudioButton:hover {
+    cursor: pointer;
+    background-color: var(--boxEnhanceAndHover);
+}

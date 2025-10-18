@@ -1,1 +1,87 @@
-@import './colorPalette.css'
+@import './colorPalette.css';
+
+#InfoPageContainer {
+
+    position: absolute;
+    top: 110px;
+    bottom: 110px;
+
+    flex-direction: column;
+
+    gap: 40px;
+
+    height: 672px;
+    width: 393px;
+
+    overflow-y: scroll;
+
+}
+
+.Information {
+    
+    height: 90px;
+    width: calc(100% - 40px);
+    margin: 0px 20px;
+
+    border-radius: 10px;
+    border: 1px solid var(--black);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+    
+
+}
+
+
+.Informationtext {
+    font-size: var(--mediumSmallSize);
+    font-weight: 1000;
+
+    
+}
+
+.StepGuideContainer {
+
+    background-color: var(--boxEnhanceAndHover);
+
+    padding: 20px;
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.StepHeader {
+    font-size: var(--mediumSize);
+    margin-bottom: 15px;
+}
+
+.InfoImageText {
+    display: flex;
+    gap: 5px;
+}
+
+.StepImage {
+    height: auto;
+    width: 150px;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+}
+
+.StepText {
+    font-size: var(--smallMediumSize);
+    margin: 0;
+}
+

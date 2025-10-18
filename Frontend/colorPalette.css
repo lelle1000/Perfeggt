@@ -6,14 +6,17 @@
     --backgroundColor: #FFFDF5;
     --boxEnhanceAndHover: #FFEEBF;
     --clickColor: #FFE96B;
-    --allFontColor: #333333;
+    --lineColor: #B1B1B1;
+    --allFontAndIconColor: #333333;
 
     /* Font Typography */
     --massiveSize: 50px;
     --bigSize: 30px;
     --mediumSize: 20px;
+    --mediumSmallSize: 18px;
+    --smallMediumSize: 15px;
     --smallSize: 12px;
-    --BOLD: 500;
+    --BOLD: 700;
 
     /* Spacing */
     --XL: 100px;

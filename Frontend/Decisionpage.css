@@ -1,1 +1,135 @@
-@import './colorPalette.css'
+@import './colorPalette.css';
+
+#DecisionPageContainer {
+
+    position: absolute;
+    top: 110px;
+    bottom: 110px;
+
+    flex-direction: column;
+
+    gap: 40px;
+
+    height: 672px;
+    width: 393px;
+
+    overflow-y: scroll;
+
+}
+
+.ChoiceContainer {
+
+    background-color: var(--boxEnhanceAndHover);
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.ChoiceHeader {
+    font-size: var(--mediumSize);
+    margin-bottom: 15px;
+}
+
+#EggSizeContainer {
+    display: flex;
+    gap: 23px;
+}
+
+.ImageBackground {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(./Images-Fonts/EggBasic.png);
+    background-size: cover;
+    background-position: center;
+    height: 90px;
+    width: 70px;
+
+    font-size: var(--smallMediumSize);
+}
+
+.ImageBackground:Hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+#EggBoiledContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.EggBox {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid var(--black);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    background-color: var(--white);
+    
+}
+
+.EggBox:Hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.EggClass {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin-top: 5px;
+}
+
+.TextForEggClass {
+    margin-top: 5px;
+}
+
+#EggInputBackground {
+    background-image: url(./Images-Fonts/EggBasic.png);
+    background-size: cover;
+    background-position: center;
+    width: 130px;
+    height: 160px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#HowManyEggsInput {
+    text-align: center;
+    width: 40px;
+    height: 30px;
+    font-size: var(--mediumSize);
+
+    border: 2px solid var(--allFontAndIconColor);
+    border-radius: 10px;
+}
+
+#SaveChoicesButton {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+
+    background-color: white;
+    border-radius: 10px;
+}
+
+#SaveChoicesButton:Hover {
+    cursor: pointer;
+    opacity: 0.5;
+}

@@ -3,10 +3,13 @@
 body {
     
     height: 100vh;
+    margin: 0;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-color: rgb(43, 43, 43);
 }
 
 @font-face {
@@ -14,22 +17,102 @@ body {
     font-family: Standard;
 }
 
+* {
+    font-family: Standard;
+    color: var(--allFontAndIconColor);
+    font-weight: var(--BOLD);
+}
+
 .Active {
     display: flex;
 }
 
-.Inactibe {
-    display: None;
+.Inactive {
+    display: none;
 }
 
 #PhoneSize {
     height: 852px;
     width: 393px;
-    border: 1px solid black;
+    border: 1px solid var(--black);
     border-radius: 20px;
+
+    box-sizing: content-box;
+
+    background-color: var(--backgroundColor);
+
+    position: relative;
+}
+
+.NavAndFooterCommon {
+    height: 90px;
+    width: 100%;
+
+    background-color: var(--backgroundColor);
 }
 
 /* Navigation (Same for all pages) */
 
+#NavContainer {
+
+    border-bottom: 1px solid var(--lineColor);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    box-sizing: border-box;
+    padding: 20px;
+
+    background-color: var(--backgroundColor);
+
+    border-radius: 20px 20px 0px 0px;
+}
+
+#PerfeggtLogo {
+
+    height: auto;
+    width: 40px;
+    
+    object-fit: contain;
+}
+
 
 /* Footer (Same for all pages) */
+
+#FooterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+    gap: 80px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    border-top: 1px solid var(--lineColor);
+
+    border-radius: 0px 0px 20px 20px;
+
+}
+
+.FooterIcon {
+    height: auto;
+    width: 40px;
+    padding: 10px;
+
+    object-fit: contain;
+
+    color: var(--allFontAndIconColor);
+
+}
+
+.FooterIcon:Hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
