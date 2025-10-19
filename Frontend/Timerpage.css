@@ -147,6 +147,14 @@
     background-color: white;
     border: 1px solid var(--allFontAndIconColor);
     height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.SignalButtons img {
+    height: 30px;
+    width: 30px;
 }
 
 .SignalButtons:hover {

@@ -42,19 +42,19 @@
     gap: 23px;
 }
 
-#SmallEgg {
+#Small {
     background-image: url(./Images-Fonts/EggBasic.png);
 }
 
-#MediumEgg {
+#Medium {
     background-image: url(./Images-Fonts/EggBasic.png);
 }
 
-#LargeEgg {
+#Large {
     background-image: url(./Images-Fonts/EggBasic.png);
 }
 
-#XLargeEgg {
+#XLarge {
     background-image: url(./Images-Fonts/EggBasic.png);
 }
 

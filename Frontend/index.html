@@ -73,25 +73,25 @@
             <div class="ChoiceContainer">
                 <div class="ChoiceHeader">Pick the size of your eggs!</div>
                 <div id="EggSizeContainer">
-                    <div id="SmallEgg" class="ImageBackground">Small 50g</div>
-                    <div id="MediumEgg" class="ImageBackground">Medium 60g</div>
-                    <div id="LargeEgg" class="ImageBackground">Large 70g</div>
-                    <div id="XLargeEgg" class="ImageBackground">X-Large 100g+</div>
+                    <div id="Small" class="ImageBackground">Small 50g</div>
+                    <div id="Medium" class="ImageBackground">Medium 60g</div>
+                    <div id="Large" class="ImageBackground">Large 70g</div>
+                    <div id="XLarge" class="ImageBackground">X-Large 100g+</div>
                 </div>
             </div>
 
             <div class="ChoiceContainer">
                 <div class="ChoiceHeader">How do you want your eggs boiled?</div>
                 <div id="EggBoiledContainer">
-                    <div id="SoftBoiled" class="EggBox">
+                    <div id="soft" class="EggBox">
                         <img class="EggClass" src="./Images-Fonts/SoftBoiled.png" alt="Soft-boiled egg">
                         <p class="TextForEggClass">Soft</p>
                     </div>
-                    <div id="MediumBoiled" class="EggBox">
+                    <div id="medium" class="EggBox">
                         <img class="EggClass" src="./Images-Fonts/MediumBoiled.png" alt="Medium-boiled egg">
                         <p class="TextForEggClass">Medium</p>
                     </div>
-                    <div id="HardBoiled" class="EggBox">
+                    <div id="hard" class="EggBox">
                         <img class="EggClass" src="./Images-Fonts/HardBoiled.png" alt="Hard-boiled egg">
                         <p class="TextForEggClass">Hard</p>
                     </div>
@@ -113,7 +113,7 @@
         <div id="TimerPageContainer" class="Inactive">
             <div id="EggTimerContainer">
                 <div id="EggTimer">
-                    <p>08:30</p>
+                    <p id="EggTimerTime"></p>
                 </div>
                 <button id="StartTimerButton">Start</button>
             </div>
@@ -125,19 +125,50 @@
 
             <div id="SignalContainer" class="Inactive">
                 <div id="PopupTop">
-                    <p id="TimerSignalHeader">Timer Signal</p>
+                    <p id="TimerSignalHeader">Timer Signal (EAR RAPE WARNING)</p>
                     <button id="TimerSignalExit">X</button>
                 </div>
                 
                 <div id="SignalButtonContainer">
-                    <button id="Alarm" class="SignalButtons">Alarm</button>
-                    <button id="Beep" class="SignalButtons">Beep</button>
-                    <button id="Buzzer" class="SignalButtons">Buzzer</button>
-                    <button id="Chime" class="SignalButtons">Chime</button>
-                    <button id="Click" class="SignalButtons">Click</button>
-                    <button id="Ding" class="SignalButtons">Ding</button>
-                    <button id="Tick" class="SignalButtons">Tick</button>
-                    <button id="Quack" class="SignalButtons">Quack</button>
+                    <button id="Alarm" class="SignalButtons">Alarm
+                        <img id="AlarmPlayButtonImage" src="./Images-Fonts/play.png" alt="Play Button">
+                        <audio src="./Mp3Files/Alarm.mp3"></audio>
+                    </button>
+
+                    <button id="Beep" class="SignalButtons">Beep
+                        <img id="BeepPlayButtonImage" src="./Images-Fonts/play.png" alt="Play Button">
+                        <audio src="./Mp3Files/Beep.mp3"></audio>
+                    </button>
+
+                    <button id="Buzzer" class="SignalButtons">Buzzer
+                        <img id="BuzzerPlayButtonImage" src="./Images-Fonts/play.png" alt="Play Button">
+                        <audio src="./Mp3Files/Buzzer.mp3"></audio>
+                    </button>
+
+                    <button id="Chime" class="SignalButtons">Chime
+                        <img id="ChimePlayButtonImage" src="./Images-Fonts/play.png" alt="Play Button">
+                        <audio src="./Mp3Files/Chime.mp3"></audio>
+                    </button>
+
+                    <button id="Click" class="SignalButtons">Click
+                        <img id="ClickPlayButtonImage" src="./Images-Fonts/play.png" alt="Play Button">
+                        <audio src="./Mp3Files/Click.mp3"></audio>
+                    </button>
+
+                    <button id="Ding" class="SignalButtons">Ding
+                        <img id="DingPlayButtonImage" src="./Images-Fonts/play.png" alt="Play Button">
+                        <audio src="./Mp3Files/Ding.mp3"></audio>
+                    </button>
+
+                    <button id="Tick" class="SignalButtons">Tick
+                        <img id="TickPlayButtonImage" src="./Images-Fonts/play.png" alt="Play Button">
+                        <audio src="./Mp3Files/Tick.mp3"></audio>
+                    </button>
+
+                    <button id="Quack" class="SignalButtons">Quack
+                        <img id="QuackPlayButtonImage" src="./Images-Fonts/play.png" alt="Play Button">
+                        <audio src="./Mp3Files/Quack.mp3"></audio>
+                    </button>
                 </div>
                 <button id="SaveSignalButton">Save</button>
             </div>
