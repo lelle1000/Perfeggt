@@ -73,15 +73,15 @@
             <div class="ChoiceContainer">
                 <div class="ChoiceHeader">Pick the size of your eggs!</div>
                 <div id="EggSizeContainer">
-                    <div class="ImageBackground">Small 50g</div>
-                    <div class="ImageBackground">Medium 60g</div>
-                    <div class="ImageBackground">Large 70g</div>
-                    <div class="ImageBackground">X-Large 100g+</div>
+                    <div id="SmallEgg" class="ImageBackground">Small 50g</div>
+                    <div id="MediumEgg" class="ImageBackground">Medium 60g</div>
+                    <div id="LargeEgg" class="ImageBackground">Large 70g</div>
+                    <div id="XLargeEgg" class="ImageBackground">X-Large 100g+</div>
                 </div>
             </div>
 
             <div class="ChoiceContainer">
-                <div class="ChoiceHeader">How do you want your eggs boiled!</div>
+                <div class="ChoiceHeader">How do you want your eggs boiled?</div>
                 <div id="EggBoiledContainer">
                     <div id="SoftBoiled" class="EggBox">
                         <img class="EggClass" src="./Images-Fonts/SoftBoiled.png" alt="Soft-boiled egg">
@@ -109,25 +109,45 @@
             </div>
 
         </div>
+
         <div id="TimerPageContainer" class="Inactive">
             <div id="EggTimerContainer">
-                <div id="EggTimer"></div>
+                <div id="EggTimer">
+                    <p>08:30</p>
+                </div>
                 <button id="StartTimerButton">Start</button>
             </div>
 
             <div id="ProteinAndEggChoices">
-                <p id="CompleteChoicesText">You are soft-boiling 5 medium sized eggs which contains roughly 39 grams of protein.</p>
+                <p id="CompleteChoicesText"></p>
                 <button id="AudioButton" class="Active"><img src="./Images-Fonts/musical-note.png" alt="Button for timer signal"></button>
             </div>
 
-            
+            <div id="SignalContainer" class="Inactive">
+                <div id="PopupTop">
+                    <p id="TimerSignalHeader">Timer Signal</p>
+                    <button id="TimerSignalExit">X</button>
+                </div>
+                
+                <div id="SignalButtonContainer">
+                    <button id="Alarm" class="SignalButtons">Alarm</button>
+                    <button id="Beep" class="SignalButtons">Beep</button>
+                    <button id="Buzzer" class="SignalButtons">Buzzer</button>
+                    <button id="Chime" class="SignalButtons">Chime</button>
+                    <button id="Click" class="SignalButtons">Click</button>
+                    <button id="Ding" class="SignalButtons">Ding</button>
+                    <button id="Tick" class="SignalButtons">Tick</button>
+                    <button id="Quack" class="SignalButtons">Quack</button>
+                </div>
+                <button id="SaveSignalButton">Save</button>
+            </div>
 
         </div>
 
         <footer id="FooterContainer" class="NavAndFooterCommon">
-            <img id="NoteIcon" class="FooterIcon" src="./Images-Fonts/notes.png" alt="Note Icon">
+            <img id="InformationIcon" class="FooterIcon" src="./Images-Fonts/notes.png" alt="Information Icon">
 
-            <img id="EggIcon" class="FooterIcon" src="./Images-Fonts/eggIcon.png" alt="Egg Icon">
+            <img id="EggIcon" class="FooterIcon" src="./Images-Fonts/SelectedIconEgg.png" alt="Egg Icon">
 
             <img id="TimerIcon" class="FooterIcon" src="./Images-Fonts/three-o-clock-clock.png" alt="Timer Icon">
         </footer>

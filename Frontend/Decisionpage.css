@@ -42,13 +42,30 @@
     gap: 23px;
 }
 
+#SmallEgg {
+    background-image: url(./Images-Fonts/EggBasic.png);
+}
+
+#MediumEgg {
+    background-image: url(./Images-Fonts/EggBasic.png);
+}
+
+#LargeEgg {
+    background-image: url(./Images-Fonts/EggBasic.png);
+}
+
+#XLargeEgg {
+    background-image: url(./Images-Fonts/EggBasic.png);
+}
+
+
 .ImageBackground {
 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url(./Images-Fonts/EggBasic.png);
+
     background-size: cover;
     background-position: center;
     height: 90px;
@@ -98,6 +115,7 @@
 .TextForEggClass {
     margin-top: 5px;
 }
+
 
 #EggInputBackground {
     background-image: url(./Images-Fonts/EggBasic.png);
